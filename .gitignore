@@ -3,7 +3,7 @@
 
 META-INF
 Servers
-.classpath
+# .classpath
 # .project
 */Server/*
 ### Eclipse ###
