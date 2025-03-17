@@ -4,7 +4,7 @@
 META-INF
 Servers
 .classpath
-.project
+# .project
 */Server/*
 ### Eclipse ###
 .metadata
@@ -15,7 +15,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
+# .settings/
 .loadpath
 .recommenders
 
