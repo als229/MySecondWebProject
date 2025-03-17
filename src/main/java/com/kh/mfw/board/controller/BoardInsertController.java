@@ -1,6 +1,7 @@
 package com.kh.mfw.board.controller;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -56,7 +57,10 @@ public class BoardInsertController extends HttpServlet {
 		}else {
 			session.setAttribute("message", "게시글 작성 실패~~~");
 		}
-		response.sendRedirect(request.getContextPath() + "/boards?page=1");
+		//response.sendRedirect(request.getContextPath() + "/boards?page=1");
+		Map<String, Object> map = new BoardService().selectBoards(1);
+		request.setAttribute("map", map);
+		request.getRequestDispatcher("/WEB-INF/views/board/boards.jsp").forward(request, response);
 		
 	}
 

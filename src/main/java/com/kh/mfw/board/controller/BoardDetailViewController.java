@@ -41,7 +41,6 @@ public class BoardDetailViewController extends HttpServlet {
     		session.setAttribute("message", "없는 게시물 데스");
     		response.sendRedirect(request.getContextPath());
     	}
-    	
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
